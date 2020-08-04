@@ -21,19 +21,15 @@
             </div>
           </div>
           <ul class="navlinks">
-            <li>
+            <li onclick="openLogin()">
               <span class="nav-item">Register/Log In</span>
             </li>
             <li>
               <a href="index.html" class="nav-link">Home</a>
             </li>
+
             <li>
-              <a href="profile.html" class="nav-link">Profile</a>
-            </li>
-            <li>
-              <a href="profiles.html" class="nav-link"
-                >Professional Directory</a
-              >
+              <a href="profiles.html" class="nav-link">Publishers'</a>
             </li>
 
             <li>
@@ -41,18 +37,7 @@
                 >Publications</a
               >
             </li>
-            <li>
-              <a href="categories.html" class="nav-link" data-count="20"
-                >Categories</a
-              >
-            </li>
-            <li>
-              <a href="" class="nav-link"
-                >Jobs/ Talent
 
-                <span class="badget">BETA</span>
-              </a>
-            </li>
             <li>
               <a href="about.html" class="nav-link">About Us</a>
             </li>
@@ -138,15 +123,15 @@
             <!-- Login Action -->
             <div class="item login">
               <span>Are you a member?</span>
-              <strong
-                ><a class="text-black open_login" href="/login"
+              <strong onclick="openLogin()"
+                ><a class="text-black open_login" href="#" role="button"
                   >Register / log in</a
                 ></strong
               >
             </div>
 
             <div class="item has-tablet" id="bt-submit">
-              <a href="" class="button button-large">
+              <a href="./forms/article.html" class="button button-large">
                 <span>SUBMIT YOUR PUBLICATIONS!</span>
               </a>
             </div>
@@ -180,11 +165,6 @@
                 class="search-input js-search-input"
                 value=""
               />
-              <div class="search-info">
-                <div class="row default active">
-                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
-                </div>
-              </div>
             </div>
           </div>
           <div class="box-right" onclick="closeSearch()">
@@ -199,56 +179,17 @@
             <div class="inner js-post js-single-element">
               <div class="box-breadcrumb">
                 <div class="box-left">
-                  <strong class="parent"><a href=" ">Magazine</a></strong>
-                  for designers and web developers
+                  <strong class="parent"><a href=" ">Article</a></strong>
+                  Climate, Research and Agriculture
                 </div>
                 <div class="box-right">
                   <div class="box-users-likes">
                     <ul class="list-users">
                       <li>
-                        <div class="item js-user" data-username="deped">
-                          <a href=" ">
-                            <img
-                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/387077/585daa4d91ae0.jpg"
-                              width="34"
-                              height="34"
-                              alt=" "
-                              class="lazy lazy-loaded"
-                          /></a>
-                        </div>
-                      </li>
-
-                      <li>
                         <div class="item js-user">
                           <a href=" ">
                             <img
                               src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/552391/5e81de884ac6a746661488.jpg"
-                              width="34"
-                              height="34"
-                              alt=" "
-                              class="lazy lazy-loaded"
-                          /></a>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="item js-user">
-                          <a href=" /">
-                            <img
-                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/505267/592ce556e6460.jpg"
-                              width="34"
-                              height="34"
-                              alt=" "
-                              class="lazy lazy-loaded"
-                          /></a>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="item js-user">
-                          <a href="profile.html">
-                            <img
-                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/718962/5c6fb2ded47b8165580660.png"
                               width="34"
                               height="34"
                               alt=" "
@@ -267,9 +208,6 @@
                         25
                       </span>
                     </span>
-                    <strong class="bt-item bt-default js-collect"
-                      >Collect</strong
-                    >
                   </div>
                 </div>
               </div>
@@ -289,40 +227,12 @@
                         ><span itemprop="name author">Platoon</span></a
                       ></strong
                     >
-                    in
-                    <strong
-                      ><a href="/blog/web-design-tag/"
-                        ><span itemprop="about">Web Design</span></a
-                      ></strong
-                    >
                     -
                     <span
                       itemprop="datePublished"
                       content="2019-01-30T10:19:00+00:00"
                       >January 30</span
                     >
-                  </div>
-                  <div class="row">
-                    <div class="list-share-circles">
-                      <ul>
-                        <li>
-                          <div class="bt-circle bt-facebook popup">
-                            <i class="fab fa-facebook-f"></i>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="bt-circle bt-twitter popup">
-                            <i class="fab fa-twitter"></i>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="bt-circle bt-instagram popup">
-                            <i class="fab fa-instagram"></i>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -522,25 +432,25 @@
                     smooth. We then used<a target="_blank" href=" "> Webpack</a>
                     to build the production assets.
                   </p>
-                  <h2>Company Info</h2>
-                  <p>
-                    Platoon helps new brands start up and old ones start over.
-                    <br /><a target="_blank" href=" ">platoon.studio</a> /<a
-                      target="_blank"
-                      href=" "
-                    >
-                      @platoonstudio
-                    </a>
-                  </p>
-                  <p>
-                    Fabio Carretti is an award-winning Creative Developer based
-                    in Italy.<br /><a target="_blank" href=" ">crrtt.com</a> /<a
-                      target="_blank"
-                      href=" "
-                    >
-                      @FabioCarretti</a
-                    >
-                  </p>
+                  <h2>Collaborators:</h2>
+                  <ul>
+                    <li>
+                      <p>John Maxwell</p>
+                    </li>
+                    <li>
+                      <p>Tony Phills</p>
+                    </li>
+                    <li>
+                      <p>Sharon White</p>
+                    </li>
+                    <li>
+                      <p>
+                        Written by
+
+                        <a href="profile.hmtl">John Max</a>
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </article>
@@ -553,85 +463,6 @@
               </div>
               <div class="grid js-grid">
                 <ul class="list-items list-flex js-elements-container">
-                  <li class="col-6 js-collectable">
-                    <div class="box-item">
-                      <figure class="rollover">
-                        <a href="profile.html">
-                          <div class="box-photo">
-                            <img
-                              width="417"
-                              height="298"
-                              src="https://assets.awwwards.com/awards/images/2019/10/Crafted thumbnail.jpg"
-                              alt=" "
-                              class="lazy lazy-loaded"
-                            />
-                          </div>
-                        </a>
-
-                        <div class="hover-item top">
-                          <span class="js-options-collectable"></span>
-
-                          <span
-                            class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
-                          >
-                            <i class="fal fa-heart"></i>
-                            <span class="number">
-                              14
-                            </span>
-                          </span>
-                          <strong class="bt-item bt-default js-collect"
-                            >Collect</strong
-                          >
-                        </div>
-                      </figure>
-
-                      <div class="box-info">
-                        <div class="content">
-                          <div class="row">
-                            <h3>
-                              <a href=" ">Case Study: Crafted by BASIC®</a>
-                            </h3>
-                          </div>
-                          <div class="row row-2col">
-                            <div class="box-left">
-                              Added to
-                              <strong>
-                                <a href=" ">Web Design</a>
-                              </strong>
-                            </div>
-                            <div class="box-right">October 7, 2019</div>
-                          </div>
-                        </div>
-                        <div class="footer style2">
-                          <div class="box-left">
-                            <div class="box-byuser js-tooltip-user">
-                              <div class="item js-user">
-                                <a href=" ">
-                                  <img
-                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/360/5de4c72a4804d134844044.png"
-                                    width="27"
-                                    height="27"
-                                    alt="BASIC®"
-                                    class="lazy lazy-loaded"
-                                  />
-                                </a>
-                              </div>
-                              <div class="by">
-                                by
-                                <strong
-                                  ><a href="/basic/" class="text-black"
-                                    >BASIC®</a
-                                  ></strong
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div class="box-right"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
                   <li class="col-6 js-collectable">
                     <div class="box-item">
                       <figure class="rollover">
@@ -658,9 +489,6 @@
                               08
                             </span>
                           </span>
-                          <strong class="bt-item bt-default js-collect"
-                            >Collect</strong
-                          >
                         </div>
                       </figure>
 
@@ -675,10 +503,7 @@
                           </div>
                           <div class="row row-2col">
                             <div class="box-left">
-                              Added to
-                              <strong>
-                                <a href=" ">Web Design</a>
-                              </strong>
+                              Agriculture , Culture, Social
                             </div>
                             <div class="box-right">September 9, 2019</div>
                           </div>
@@ -726,32 +551,18 @@
                 The awards for design, creativity and innovation on the Internet
               </h2>
               <ul class="menu-footer">
-                <li class="directory not-mobile">
-                  <a href="" data-count="2">Directory</a>
-                </li>
-                <li class="jobs not-mobile">
-                  <a href=" " data-count="5">Jobs</a>
-                </li>
                 <li><a href="about.html" class="item">About Us</a></li>
-                <li><a href="" class="item">Winners</a></li>
-                <li><a href="" class="item">Nominees</a></li>
-                <li><a href=" " class="item">Blog</a></li>
+                <li><a href="profiles.html" class="item">Publishers</a></li>
+                <li><a href="category.html" class="item">Publications</a></li>
+                <li><a href="" class="item">Advertisement</a></li>
               </ul>
               <p class="follow">
                 <strong>Follow us</strong>
                 <a rel="noopener" href=" " target="_blank">Twitter</a>
                 <a rel="noopener" href="" target="_blank">Facebook</a>
-                <a rel="noopener" href="" target="_blank">Youtube</a>
                 <a rel="noopener" href=" " target="_blank">Instagram</a>
                 <a rel="noopener" href=" " target="_blank">Linkedin</a>
               </p>
-            </div>
-            <div class="box-right">
-              <div class="headline">
-                Next Conferences
-                <i class="fal fa-calendar"></i>
-                <strong><a href="" class="link-1">Coming soon</a></strong>
-              </div>
             </div>
           </div>
         </div>
@@ -762,7 +573,6 @@
                 <li>
                   <a rel="nofollow" href="./others/contact.html">Contact Us</a>
                 </li>
-                <li><a rel="nofollow" href="">F.A.Q</a></li>
                 <li>
                   <a rel="nofollow" href="./others/cookies.html"
                     >Cookies Policy</a
@@ -778,47 +588,20 @@
                 </li>
                 <li>
                   <div class="box-select-lang js-box-select-locales">
-                    <div class="select" onclick="openDropDown(event)">
+                    <div class="select" onclick=" ">
                       English
                       <img src="./img/icons/uk.svg" alt="" />
                     </div>
-
-                    <ul class="options">
-                      <li
-                        lang="en"
-                        class="js-change-locale active"
-                        data-locale="en"
-                      >
-                        English
-                        <img src="./img/icons/uk.svg" alt="" />
-                      </li>
-                      <li lang="es" class="js-change-locale" data-locale="es">
-                        Español - Spanish
-                        <img src="./img/icons/spain.svg" alt="" />
-                      </li>
-                      <li lang="ko" class="js-change-locale" data-locale="ko">
-                        한국어 - Korean
-                        <img src="./img/icons/southkorea.svg" alt="" />
-                      </li>
-                      <li lang="zh" class="js-change-locale" data-locale="zh">
-                        中國 - Chinese
-                        <img src="./img/icons/china.svg" alt="" />
-                      </li>
-                      <li lang="ja" class="js-change-locale" data-locale="ja">
-                        日本語 - Japanese
-                        <img src="./img/icons/japan.svg" alt="" />
-                      </li>
-                    </ul>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="box-right">
               <p>
-                Private Cloud by
+                Designed by
                 <strong
-                  ><a href=" " target="_blank" rel="noopener nofollow"
-                    >Stackscale</a
+                  ><a href="" target="_blank" rel="noopener nofollow"
+                    >Matrix Web</a
                   ></strong
                 >
               </p>

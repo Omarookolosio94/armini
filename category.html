@@ -21,19 +21,15 @@
             </div>
           </div>
           <ul class="navlinks">
-            <li>
+            <li onclick="openLogin()">
               <span class="nav-item">Register/Log In</span>
             </li>
             <li>
               <a href="index.html" class="nav-link">Home</a>
             </li>
+
             <li>
-              <a href="profile.html" class="nav-link">Profile</a>
-            </li>
-            <li>
-              <a href="profiles.html" class="nav-link"
-                >Professional Directory</a
-              >
+              <a href="profiles.html" class="nav-link">Publishers'</a>
             </li>
 
             <li>
@@ -41,18 +37,7 @@
                 >Publications</a
               >
             </li>
-            <li>
-              <a href="categories.html" class="nav-link" data-count="20"
-                >Categories</a
-              >
-            </li>
-            <li>
-              <a href="" class="nav-link"
-                >Jobs/ Talent
 
-                <span class="badget">BETA</span>
-              </a>
-            </li>
             <li>
               <a href="about.html" class="nav-link">About Us</a>
             </li>
@@ -138,15 +123,15 @@
             <!-- Login Action -->
             <div class="item login">
               <span>Are you a member?</span>
-              <strong
-                ><a class="text-black open_login" href="/login"
+              <strong onclick="openLogin()"
+                ><a class="text-black open_login" href="#" role="button"
                   >Register / log in</a
                 ></strong
               >
             </div>
 
             <div class="item has-tablet" id="bt-submit">
-              <a href="" class="button button-large">
+              <a href="./forms/article.html" class="button button-large">
                 <span>SUBMIT YOUR PUBLICATIONS!</span>
               </a>
             </div>
@@ -180,11 +165,6 @@
                 class="search-input js-search-input"
                 value=""
               />
-              <div class="search-info">
-                <div class="row default active">
-                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
-                </div>
-              </div>
             </div>
           </div>
           <div class="box-right" onclick="closeSearch()">
@@ -198,12 +178,24 @@
         <div class="content-view">
           <div class="block">
             <div class="inner search-container">
+              <div class="box-heading no-flex pt-0">
+                <div class="grid one-row">
+                  <div class="col-3">
+                    <div class="box-left">
+                      <h2 class="title">
+                        <a href="" class="text-black">Category</a>
+                      </h2>
+                      <span>Pick and Explore</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="grid js-grid">
                 <ul class="list-items list-flex js-elements-container">
                   <li class="collection col-3">
                     <div class="box-item">
                       <figure class="rollover darken">
-                        <a href=" " class="item-link"></a>
+                        <a href="categories.html" class="item-link"></a>
                         <div class="box-photo">
                           <img
                             width="417"
@@ -215,107 +207,32 @@
                         </div>
                         <div class="hover-item has-hover center">
                           <h3 class="js-title-collection">
-                            The Best of Navigation
+                            The Best of Science
                           </h3>
-                          <div>294 Elements</div>
+                          <div>50 Publications</div>
                         </div>
                       </figure>
                       <div class="box-info">
                         <div class="content">
                           <div class="row">
                             <h3>
-                              <a class="js-title-collection" href=" ">
-                                The Best of Navigation
+                              <a
+                                class="js-title-collection"
+                                href="categories.html"
+                              >
+                                The Best of Science
                               </a>
                             </h3>
                           </div>
                           <div class="row row-auto">
-                            Curated by
-                            <strong><a href=" ">Awwwards</a></strong>
+                            Compiled by
+                            <strong><a href="#!">Ariere</a></strong>
                           </div>
                         </div>
                         <div class="footer">
                           <div class="box-left">
                             <div class="box-users-likes">
-                              <ul class="list-users">
-                                <li>
-                                  <div
-                                    class="item js-user"
-                                    data-username="Letsknotweddings"
-                                  >
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945385/5f15d2675ff4b872603847.jpeg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div
-                                    class="item js-user"
-                                    data-username="chanai"
-                                  >
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945497/5f1662c54f440814130036.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div class="item js-user">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user4.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div class="item js-user">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945950/5f17bcbc0daa6351821329.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-                              </ul>
-
-                              <div class="container-bt-circle">
-                                <div class="tooltip">
-                                  <div class="bt-like js-more">
-                                    <svg viewBox="0 0 27 27" class="circle">
-                                      <path
-                                        d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52"
-                                      ></path>
-                                    </svg>
-                                    <i class="fal fa-user"></i>
-
-                                    <span class="number js-number">1241</span>
-                                  </div>
-                                  <div class="box-tooltip">
-                                    <div class="tooltip-text">
-                                      View followers
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              <div class="container-bt-circle"></div>
                             </div>
                           </div>
                           <div class="box-right js-render-follow-button">
@@ -323,264 +240,7 @@
                               class="bt-default small js-follow js-button-follow"
                             >
                               <span class="js-bt-content">
-                                Follow
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="collection col-3">
-                    <div class="box-item">
-                      <figure class="rollover darken">
-                        <a href=" " class="item-link"></a>
-                        <div class="box-photo">
-                          <img
-                            width="417"
-                            height="298"
-                            src="https://assets.awwwards.com/awards/images/2020/05/portfolio-collection-1.jpg"
-                            alt=" "
-                            class="lazy lazy-loaded"
-                          />
-                        </div>
-                        <div class="hover-item has-hover center">
-                          <h3 class="js-title-collection">
-                            Freelance Portfolios
-                          </h3>
-                          <div>175 Elements</div>
-                        </div>
-                      </figure>
-                      <div class="box-info">
-                        <div class="content">
-                          <div class="row">
-                            <h3>
-                              <a class="js-title-collection" href=" ">
-                                Freelance Portfolios
-                              </a>
-                            </h3>
-                          </div>
-                          <div class="row row-auto">
-                            Curated by
-                            <strong><a href=" ">Awwwards</a></strong>
-                          </div>
-                        </div>
-                        <div class="footer">
-                          <div class="box-left">
-                            <div class="box-users-likes">
-                              <ul class="list-users">
-                                <li>
-                                  <div class="item js-user">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div class="item js-user">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945385/5f15d2675ff4b872603847.jpeg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div class="item js-user">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div
-                                    class="item js-user"
-                                    data-username="history-18"
-                                  >
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945950/5f17bcbc0daa6351821329.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-                              </ul>
-
-                              <div class="container-bt-circle">
-                                <div class="tooltip">
-                                  <div class="bt-like js-more">
-                                    <svg viewBox="0 0 27 27" class="circle">
-                                      <path
-                                        d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52"
-                                      ></path>
-                                    </svg>
-                                    <i class="fal fa-user"></i>
-
-                                    <span class="number js-number">997</span>
-                                  </div>
-                                  <div class="box-tooltip">
-                                    <div class="tooltip-text">
-                                      View followers
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="box-right js-render-follow-button">
-                            <div
-                              class="bt-default small js-follow js-button-follow"
-                              data-text-start="Follow"
-                              data-text-end="Following"
-                            >
-                              <span class="js-bt-content">
-                                Follow
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="collection col-3">
-                    <div class="box-item">
-                      <figure class="rollover darken">
-                        <a href="" class="item-link"></a>
-                        <div class="box-photo">
-                          <img
-                            width="417"
-                            height="298"
-                            src="https://assets.awwwards.com/awards/images/2018/07/TRANSITIONS.jpg"
-                            alt="Transitions"
-                            class="lazy lazy-loaded"
-                          />
-                        </div>
-                        <div class="hover-item has-hover center">
-                          <h3 class="js-title-collection">
-                            Transitions
-                          </h3>
-                          <div>213 Elements</div>
-                        </div>
-                      </figure>
-                      <div class="box-info">
-                        <div class="content">
-                          <div class="row">
-                            <h3>
-                              <a class="js-title-collection" href=" ">
-                                Transitions
-                              </a>
-                            </h3>
-                          </div>
-                          <div class="row row-auto">
-                            Curated by
-                            <strong><a href=" ">Awwwards</a></strong>
-                          </div>
-                        </div>
-                        <div class="footer">
-                          <div class="box-left">
-                            <div class="box-users-likes">
-                              <ul class="list-users">
-                                <li>
-                                  <div class="item js-user" data-username=" ">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945385/5f15d2675ff4b872603847.jpeg"
-                                        width="27"
-                                        height="27"
-                                        alt=""
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div class="item js-user">
-                                    <a href="/chanai/">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945497/5f1662c54f440814130036.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div class="item js-user">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user4.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-
-                                <li>
-                                  <div class="item js-user">
-                                    <a href=" ">
-                                      <img
-                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
-                                        width="27"
-                                        height="27"
-                                        alt=" "
-                                        class="lazy lazy-loaded"
-                                    /></a>
-                                  </div>
-                                </li>
-                              </ul>
-
-                              <div class="container-bt-circle">
-                                <div class="tooltip">
-                                  <div class="bt-like js-more">
-                                    <svg viewBox="0 0 27 27" class="circle">
-                                      <path
-                                        d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52"
-                                      ></path>
-                                    </svg>
-                                    <i class="fal fa-user"></i>
-
-                                    <span class="number js-number">1094</span>
-                                  </div>
-                                  <div class="box-tooltip">
-                                    <div class="tooltip-text">
-                                      View followers
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="box-right js-render-follow-button">
-                            <div
-                              class="bt-default small js-follow js-button-follow"
-                            >
-                              <span class="js-bt-content">
-                                Follow
+                                View
                               </span>
                             </div>
                           </div>
@@ -592,11 +252,11 @@
                 <div class="paginate">
                   <div class="col-3">
                     <span class="current item">1</span
-                    ><a class="item" href=" ">2</a
-                    ><a class="item" href=" ">3</a>
+                    ><a class="item" href="#!">2</a
+                    ><a class="item" href="#!">3</a>
                   </div>
                   <div class="col-3">
-                    <a class="item more" href=" ">SHOW ME MORE</a>
+                    <a class="item more" href="#!">SHOW ME MORE</a>
                   </div>
                 </div>
               </div>
@@ -613,32 +273,18 @@
                 The awards for design, creativity and innovation on the Internet
               </h2>
               <ul class="menu-footer">
-                <li class="directory not-mobile">
-                  <a href="" data-count="2">Directory</a>
-                </li>
-                <li class="jobs not-mobile">
-                  <a href=" " data-count="5">Jobs</a>
-                </li>
                 <li><a href="about.html" class="item">About Us</a></li>
-                <li><a href="" class="item">Winners</a></li>
-                <li><a href="" class="item">Nominees</a></li>
-                <li><a href=" " class="item">Blog</a></li>
+                <li><a href="profiles.html" class="item">Publishers</a></li>
+                <li><a href="category.html" class="item">Publications</a></li>
+                <li><a href="" class="item">Advertisement</a></li>
               </ul>
               <p class="follow">
                 <strong>Follow us</strong>
                 <a rel="noopener" href=" " target="_blank">Twitter</a>
                 <a rel="noopener" href="" target="_blank">Facebook</a>
-                <a rel="noopener" href="" target="_blank">Youtube</a>
                 <a rel="noopener" href=" " target="_blank">Instagram</a>
                 <a rel="noopener" href=" " target="_blank">Linkedin</a>
               </p>
-            </div>
-            <div class="box-right">
-              <div class="headline">
-                Next Conferences
-                <i class="fal fa-calendar"></i>
-                <strong><a href="" class="link-1">Coming soon</a></strong>
-              </div>
             </div>
           </div>
         </div>
@@ -649,7 +295,6 @@
                 <li>
                   <a rel="nofollow" href="./others/contact.html">Contact Us</a>
                 </li>
-                <li><a rel="nofollow" href="">F.A.Q</a></li>
                 <li>
                   <a rel="nofollow" href="./others/cookies.html"
                     >Cookies Policy</a
@@ -665,47 +310,20 @@
                 </li>
                 <li>
                   <div class="box-select-lang js-box-select-locales">
-                    <div class="select" onclick="openDropDown(event)">
+                    <div class="select" onclick=" ">
                       English
                       <img src="./img/icons/uk.svg" alt="" />
                     </div>
-
-                    <ul class="options">
-                      <li
-                        lang="en"
-                        class="js-change-locale active"
-                        data-locale="en"
-                      >
-                        English
-                        <img src="./img/icons/uk.svg" alt="" />
-                      </li>
-                      <li lang="es" class="js-change-locale" data-locale="es">
-                        Español - Spanish
-                        <img src="./img/icons/spain.svg" alt="" />
-                      </li>
-                      <li lang="ko" class="js-change-locale" data-locale="ko">
-                        한국어 - Korean
-                        <img src="./img/icons/southkorea.svg" alt="" />
-                      </li>
-                      <li lang="zh" class="js-change-locale" data-locale="zh">
-                        中國 - Chinese
-                        <img src="./img/icons/china.svg" alt="" />
-                      </li>
-                      <li lang="ja" class="js-change-locale" data-locale="ja">
-                        日本語 - Japanese
-                        <img src="./img/icons/japan.svg" alt="" />
-                      </li>
-                    </ul>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="box-right">
               <p>
-                Private Cloud by
+                Designed by
                 <strong
-                  ><a href=" " target="_blank" rel="noopener nofollow"
-                    >Stackscale</a
+                  ><a href="" target="_blank" rel="noopener nofollow"
+                    >Matrix Web</a
                   ></strong
                 >
               </p>

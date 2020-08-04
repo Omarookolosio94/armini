@@ -1,0 +1,27 @@
+{
+  "name": "arieretemplate",
+  "version": "1.0.0",
+  "description": "UI/UX Design for Ariere Publication",
+  "main": "index.js",
+  "homepage": "",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "UI/UX",
+    "Design",
+    "HTML",
+    "CSS",
+    "Vanilla",
+    "JS"
+  ],
+  "author": "Okolosio Oghenemaro, MatrixWeb",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

@@ -1,0 +1,309 @@
+.asterisk-required:after {
+  content: '*';
+  margin-left: 5px;
+  color: $lightGreen;
+  font-weight: bold;
+}
+
+.breadcrumb-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px 0;
+  font-weight: 300;
+  overflow: hidden;
+
+  li {
+    width: 33.333%;
+    padding: 0 0 0 2px;
+    text-align: left;
+    font-size: 16px;
+
+    span {
+      display: block;
+      padding: 15px 0 0 40px;
+      border-top: 8px solid $secondaryBg;
+      color: $secondaryBg;
+    }
+  }
+  li.active a,
+  li.active span {
+    font-weight: bold;
+  }
+}
+
+.box-form-fields {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 25px 40px;
+  background-color: $plainWhite;
+  text-align: left;
+  font-size: 16px;
+
+  ul {
+    clear: both;
+  }
+
+  .row {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 7px 0;
+    line-height: 60px;
+
+    .text-input {
+      width: 100%;
+    }
+  }
+  .row.left {
+    width: 28%;
+    padding-right: 0;
+
+    label {
+      display: block;
+      height: 60px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding-right: 10px;
+    }
+  }
+}
+
+.box-form-fields:after,
+.box-form-fields ul:after,
+.box-form-fields li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.form-group {
+  position: relative;
+  display: block;
+}
+
+.form-group.has-info {
+  color: $gray;
+}
+
+.text-input {
+  display: block;
+  height: 60px;
+  padding: 0 15px;
+  background-color: $plainWhite;
+  border: 1px solid $inputBorder;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-text-input {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  span {
+    padding: 0 15px;
+    border: 1px solid $inputBorder;
+    border-right: none;
+    background-color: $span;
+    line-height: 58px;
+  }
+  span.size-medium {
+    width: 230px;
+  }
+  .text-input {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+textarea.text-input {
+  padding-top: 15px;
+}
+
+.text-input:focus {
+  outline: none;
+  background-color: $plainWhite;
+}
+
+// CheckBox
+.input-check {
+  position: relative;
+
+  input {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 10px;
+    line-height: normal;
+    cursor: pointer;
+  }
+  label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    margin-top: -10px;
+    background-color: $inputBorder;
+  }
+
+  label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 10px;
+    height: 6px;
+    margin-top: -5px;
+    border: 2px solid $secondaryBg;
+    border-top: none;
+    border-right: none;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transform: rotate(-45deg) scale(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  input[type='checkbox']:checked + label:after {
+    opacity: 1;
+    transform: rotate(-45deg) scale(1);
+  }
+}
+
+.width-full {
+  width: 100%;
+}
+
+.box-input-file {
+  border: 1px solid $inputBorder;
+  overflow: hidden;
+}
+
+.box-input-file .input-file {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.box-input-file label {
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box-input-file label strong {
+  width: 30%;
+  height: 60px;
+  padding: 0 15px;
+  line-height: 60px;
+  font-size: 13px;
+  text-align: center;
+  background-color: $lightGreen;
+  color: $plainWhite;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-form-fields .box-text-input + .box-text-input {
+  margin-top: 15px;
+}
+
+.box-input-file label *:not(svg) {
+  display: block;
+  float: left;
+  height: 50px;
+  overflow: hidden;
+}
+
+.box-add-image {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box-input-file.style2 {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+
+  label {
+    overflow: initial;
+  }
+
+  .photo {
+    position: relative;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  .photo img {
+    float: left;
+  }
+  .photo strong {
+    height: 40px;
+    line-height: 40px;
+  }
+  label strong {
+    width: 100%;
+  }
+
+  .requirements {
+    margin-top: auto;
+  }
+
+  .requirements ul {
+    line-height: normal;
+    font-size: 14px;
+    color: $lightHover;
+  }
+  .requirements ul li {
+    padding: 1px 0;
+  }
+}
+
+.form-group.is-image-avatar .box-add-image {
+  padding: 15px;
+  border: 1px solid $inputBorder;
+}
+
+.form-group.is-image-avatar .photo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+@include mediaLg {
+  .breadcrumb-submit li a,
+  .breadcrumb-submit li span {
+    padding-left: 0;
+  }
+}
+
+@include mediaMd {
+  .box-form-fields {
+    padding: 23px;
+
+    .row {
+      width: 100% !important;
+    }
+
+    .row.left {
+      line-height: normal;
+      label {
+        height: auto;
+      }
+    }
+  }
+
+  .box-text-input span.size-medium {
+    width: 180px;
+  }
+}

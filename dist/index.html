@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariere Publication</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="./img/icons/arlogobar.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./fa-light/light.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="home ht-visible">
+    <div class="wrapper">
+      <div class="side-nav" id="sideNav">
+        <div class="top">
+          <div class="header">
+            <div class="close-btn" onclick="closeSideNav()">
+              <span>Close</span>
+              <i class="fal fa-times"></i>
+            </div>
+          </div>
+          <ul class="navlinks">
+            <li onclick="openLogin()">
+              <span class="nav-item">Register/Log In</span>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li>
+              <a href="profiles.html" class="nav-link"
+                >Professional Directory</a
+              >
+            </li>
+
+            <li>
+              <a href="category.html" class="nav-link" data-count="20"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="categories.html" class="nav-link" data-count="20"
+                >Categories</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-link"
+                >Jobs/ Talent
+
+                <span class="badget">BETA</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-bottom">
+          <div class="box-version">
+            <span class="box-version-text">Activate black option</span>
+            <div class="input-check-toggle check-small">
+              <input id="version-color" type="checkbox" class="js-dark" />
+              <label for="version-color">
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="header">
+        <!-- Header Top with Social Links -->
+        <div class="header-top">
+          <div class="box-left">
+            <div class="item">
+              <span
+                class="link-1 js-nav-main js-nav-lang"
+                data-menu-id="menu-lang"
+              >
+                ENGLISH
+              </span>
+            </div>
+          </div>
+          <div class="box-center">
+            <h1 class="slogan">
+              The Road To Becoming Your Own Publisher Begins Now
+            </h1>
+          </div>
+          <div class="box-right">
+            <ul class="list-social item">
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Main Header  -->
+        <div class="header-main">
+          <div class="box-left">
+            <div
+              class="item bt-menu js-nav-main"
+              data-menu-id="menu-main"
+              onclick="openSideNav()"
+              id="btMenu"
+            >
+              <div class="ico-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span class="has-tablet">MENU</span>
+            </div>
+          </div>
+          <div class="box-right">
+            <div
+              class="item bt-search"
+              id="js-search-container"
+              onclick="openSearch()"
+            >
+              <i class="fal fa-search"></i>
+            </div>
+
+            <!-- Login Action -->
+            <div class="item login">
+              <span>Are you a member?</span>
+              <strong onclick="openLogin()"
+                ><a class="text-black open_login" href="#" role="button"
+                  >Register / log in</a
+                ></strong
+              >
+            </div>
+
+            <div class="item has-tablet" id="bt-submit">
+              <a href="./forms/article.html" class="button button-large">
+                <span>SUBMIT YOUR PUBLICATIONS!</span>
+              </a>
+            </div>
+          </div>
+          <div class="logo-header">
+            <a href="index.html" aria-label="Awwwards">
+              <span>
+                <img src="./img/icons/arlogo.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- End of Main header -->
+
+        <!-- Search Component -->
+
+        <div class="box-search" id="box-search">
+          <div class="box-left">
+            <div class="box-input">
+              <div class="item ico-search">
+                <i class="fal fa-search"></i>
+              </div>
+
+              <input
+                type="text"
+                id="search-text"
+                placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                autocomplete="off"
+                class="search-input js-search-input"
+                value=""
+              />
+              <div class="search-info">
+                <div class="row default active">
+                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-right" onclick="closeSearch()">
+            <div class="bt-close js-search-close"></div>
+          </div>
+        </div>
+        <!-- End of Search Component -->
+      </header>
+      <section id="content">
+        <div class="content-view">
+          <!-- Box bg -->
+          <div class="box-site-head">
+            <div class="box-bg has-tablet">
+              <a href="">
+                <img
+                  src="./img/coverlg.jpg"
+                  data-src=""
+                  alt="Background Large Image"
+                  width="1900"
+                  height="700"
+                  class="lazy lazy-loaded"
+                />
+              </a>
+            </div>
+            <div class="box-photo has-mobile">
+              <a href="">
+                <img
+                  src="./img/coversm.jpg"
+                  data-srcset=""
+                  alt="Background Small Image"
+                  class="lazy"
+                />
+                <div class="ribbon">
+                  <img
+                    width="90"
+                    height="151"
+                    src="./img/sotd_white_left.png"
+                    srcset=""
+                    alt="Site of the Day"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="box-content">
+              <a
+                href=""
+                class="site-link"
+                aria-label="Pioneer - Corn Revolutionized"
+              ></a>
+              <div class="inner vertical-center">
+                <div class="box-info">
+                  <div class="row">
+                    <h2 class="heading-large">
+                      <a href="article.html">Pioneer - Corn Revolutionized</a>
+                    </h2>
+                  </div>
+                  <div class="row">
+                    <div class="by">
+                      by
+                      <strong>
+                        <a href="">Resn</a>
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="box-notesite js-notes">
+                    <ul>
+                      <li
+                        class="circle-note-progress style-content"
+                        data-note="7.96"
+                      >
+                        <div class="circle">
+                          <svg width="84" height="84">
+                            <circle r="38" cy="41" cx="41"></circle>
+                            <circle
+                              r="38"
+                              cy="41"
+                              cx="41"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              class="circle-progress"
+                              style="
+                                animation: 900ms ease 0s 1 normal forwards
+                                  running donut-show-3;
+                              "
+                            ></circle>
+                          </svg>
+                          <div class="percent">
+                            <span class="int">7</span
+                            ><span class="dec">.00</span>
+                          </div>
+                        </div>
+                        <div class="legend">
+                          LIKES
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-breadcrumb">
+                  <div class="box-left">
+                    <strong class="parent">
+                      <a href="">Article of the Day</a>
+                    </strong>
+                    <span class="text-x-thin">July 8, 2020</span>
+                  </div>
+                  <div class="box-right">
+                    <!-- <div class="list-share-circles style2 light">
+                      <ul class="openShareLinks">
+                        <li>
+                          <div
+                            class="bt-circle bt-instagram popup"
+                            data-link=" "
+                          >
+                            <i class="fab fa-instagram"></i>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="bt-circle bt-twitter popup" data-link=" ">
+                            <i class="fab fa-twitter"></i>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div
+                            class="bt-circle bt-facebook popup"
+                            data-link=" "
+                          >
+                            <i class="fab fa-facebook-f"></i>
+                          </div>
+                        </li>
+                      </ul>
+                      <div
+                        class="bt-circle bt-share js-social"
+                        onclick="openShareLink()"
+                      >
+                        <i class="fal fa-share-alt"></i>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="box-bl">
+                  <a
+                    href=" "
+                    class="js-visit-item bt-default green-fill"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    >Read Article</a
+                  >
+                  <strong class="bt-item bt-default js-collect">
+                    <i class="fal fa-thumbs-up"></i>
+                    Like</strong
+                  >
+                </div>
+                <div class="box-br">
+                  <div class="box-users-likes">
+                    <ul class="list-users">
+                      <li>
+                        <div class="item js-judge-note">
+                          <a href="">
+                            <img
+                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/705669/5c4adc3b0158a.jpg"
+                              width="34"
+                              height="34"
+                              alt=" "
+                              class="grayscale lazy lazy-loaded"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item js-judge-note">
+                          <a href=" ">
+                            <img
+                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/169468/5e04b450d9fbe949718975.jpg"
+                              width="34"
+                              height="34"
+                              class="grayscale lazy lazy-loaded"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item js-judge-note">
+                          <a href=" ">
+                            <img
+                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/561963/5eba717c18402759709374.jpg"
+                              width="34"
+                              height="34"
+                              alt=""
+                              class="grayscale lazy lazy-loaded"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block p-0" id="block-sotd">
+            <div class="inner">
+              <div class="box-heading no-flex">
+                <div class="grid one-row">
+                  <div class="col-3">
+                    <div class="box-left">
+                      <h2 class="title">
+                        <a href="" class="text-black">Articles of the day</a>
+                      </h2>
+                      <span>selected articles</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid js-grid">
+                <ul
+                  class="list-items list-flex list-one-row js-elements-container"
+                >
+                  <li class="col-3 js-collectable">
+                    <div class="box-item">
+                      <figure class="rollover">
+                        <a href="">
+                          <div class="box-photo">
+                            <img
+                              alt=" "
+                              width="417"
+                              height="298"
+                              class="lazy lazy-loaded"
+                              srcset="
+                                https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/06/5ef07971a9dfc835357909.jpg 1x,
+                                https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/06/5ef07971a9dfc835357909.jpg      2x
+                              "
+                            />
+                          </div>
+                        </a>
+
+                        <div class="hover-item top">
+                          <span class="js-options-collectable"></span>
+
+                          <span
+                            class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                          >
+                            <i class="fal fa-heart"></i>
+
+                            <span class="number">
+                              110
+                            </span>
+                          </span>
+                          <!-- <strong class="bt-item bt-default js-collect"
+                            >Collect</strong
+                          > -->
+                        </div>
+
+                        <!-- <div class="hover-item bottom">
+                          <a
+                            class="js-visit-item bt-item bt-link"
+                            data-type="submission"
+                            target="_blank"
+                            rel="noopener nofollow"
+                          >
+                            <i class="fal fa-share"></i>
+                          </a>
+                        </div> -->
+                      </figure>
+
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <h3>
+                              <a href="">Chiara Luzzana–Sound Designer</a>
+                            </h3>
+                          </div>
+                          <div class="row row-2col">
+                            <div class="box-left">
+                              Science , Discovery , Lifestyle
+                            </div>
+
+                            <div class="box-right">
+                              July 13, 2020
+                            </div>
+                          </div>
+                        </div>
+                        <div class="footer style2">
+                          <div class="box-left">
+                            <div class="box-byuser js-tooltip-user">
+                              <div class="item js-user usertooltip">
+                                <a href="">
+                                  <img
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/474054/5e3978d49950a620609094.jpg"
+                                    width="27"
+                                    height="27"
+                                    alt="Niccolò Miranda"
+                                    class="lazy lazy-loaded"
+                                  />
+                                </a>
+                                <!-- <div class="tooltip-user">
+                                  <div class="row-user">
+                                    <div class="avatar-profile">
+                                      <a href=" ">
+                                        <img
+                                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/631040/5d110fae0b12e602186285.png"
+                                          width="70"
+                                          height="70"
+                                          alt=""
+                                        />
+                                        <div class="user-type">
+                                          <i class="fal fa-user"></i>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="row-user">
+                                    <strong
+                                      ><a href=" " class="text-black"
+                                        >Marvin Schwaibold</a
+                                      ></strong
+                                    >
+                                  </div>
+                                  <div class="row-user">
+                                    <span class="text-gray">Web Developer</span>
+                                  </div>
+                                  <div class="row-user">
+                                    <ul class="list-stats-icons">
+                                      <li class="favorites">
+                                        12 Publications
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div> -->
+                              </div>
+                              <div class="by">
+                                by
+                                <strong
+                                  ><a href="" class="text-black"
+                                    >Niccolò Miranda</a
+                                  ></strong
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="block pt-0">
+            <div class="inner">
+              <div class="box-heading p-0">
+                <div class="box-left">
+                  <h2 class="title">
+                    <a href="" class="text-black">
+                      Promotions
+                    </a>
+                  </h2>
+                  <span>Reach Your Audience</span>
+                </div>
+                <div class="box-right"></div>
+              </div>
+              <div class="grid">
+                <ul class="list-items list-flex list-one-row js-agency-content">
+                  <li class="col-3">
+                    <div class="box-item box-style8">
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <strong>Place Ad Today</strong>
+                          </div>
+                          <div class="row row-auto">
+                            <div class="title">
+                              Advertise with us at Premium Prices
+                              <div>
+                                <div
+                                  class="box-dropdown js-country-selector"
+                                  onclick="openDropDown(event)"
+                                >
+                                  <div class="option-active">Learn More</div>
+                                  <ul class="options style2">
+                                    <li>
+                                      <a href="" class="item-option"
+                                        >Place Advert</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a href="" class="item-option">Prices</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                        <div class="footer">
+                          <div class="box-left">
+                            <strong
+                              ><a href="" class="bt-default small"
+                                >Advert</a
+                              ></strong
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="collection col-3">
+                    <div class="box-item">
+                      <figure class="rollover darken">
+                        <a href=" " class="item-link"></a>
+                        <div class="box-photo">
+                          <img
+                            width="417"
+                            height="298"
+                            src="https://assets.awwwards.com/awards/images/2018/08/trans.jpg"
+                            alt=" "
+                            class="lazy lazy-loaded"
+                          />
+                        </div>
+                        <div class="hover-item has-hover center">
+                          <h3 class="js-title-collection">
+                            The Best of Collections
+                          </h3>
+                          <div>300 Publications</div>
+                        </div>
+                      </figure>
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <h3>
+                              <a class="js-title-collection" href=" ">
+                                The Best of Collections
+                              </a>
+                            </h3>
+                          </div>
+                          <div class="row row-auto">
+                            Compiled by
+                            <strong><a href=" ">Ariere</a></strong>
+                          </div>
+                        </div>
+                        <div class="footer">
+                          <div class="box-left">
+                            <div class="box-users-likes">
+                              <div class="container-bt-circle"></div>
+                            </div>
+                          </div>
+                          <div class="box-right js-render-follow-button">
+                            <div
+                              class="bt-default small js-follow js-button-follow"
+                            >
+                              <span class="js-bt-content">
+                                View
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="button button-loadmore style2 js-bt-loading js-bt-loadmore"
+                >
+                  <span class="txt-default">Load More</span>
+                  <span class="txt-loading">Loading...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="box-top">
+          <div class="inner">
+            <div class="box-left">
+              <h2 class="headline slogan not-mobile">
+                The awards for design, creativity and innovation on the Internet
+              </h2>
+              <ul class="menu-footer">
+                <li class="directory not-mobile">
+                  <a href="" data-count="2">Directory</a>
+                </li>
+                <li class="jobs not-mobile">
+                  <a href=" " data-count="5">Jobs</a>
+                </li>
+                <li><a href="about.html" class="item">About Us</a></li>
+                <li><a href="" class="item">Winners</a></li>
+                <li><a href="" class="item">Nominees</a></li>
+                <li><a href=" " class="item">Blog</a></li>
+              </ul>
+              <p class="follow">
+                <strong>Follow us</strong>
+                <a rel="noopener" href=" " target="_blank">Twitter</a>
+                <a rel="noopener" href="" target="_blank">Facebook</a>
+                <a rel="noopener" href="" target="_blank">Youtube</a>
+                <a rel="noopener" href=" " target="_blank">Instagram</a>
+                <a rel="noopener" href=" " target="_blank">Linkedin</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <div class="inner">
+            <div class="box-left">
+              <ul class="menu-footer">
+                <li>
+                  <a rel="nofollow" href="./others/contact.html">Contact Us</a>
+                </li>
+                <li><a rel="nofollow" href="">F.A.Q</a></li>
+                <li>
+                  <a rel="nofollow" href="./others/cookies.html"
+                    >Cookies Policy</a
+                  >
+                </li>
+                <li>
+                  <a rel="nofollow" href="./others/legal.html">Legal Terms</a>
+                </li>
+                <li>
+                  <a rel="nofollow" href="./others/privacy.html"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <div class="box-select-lang js-box-select-locales">
+                    <div class="select" onclick=" ">
+                      English
+                      <img src="./img/icons/uk.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box-right">
+              <p>
+                Designed by
+                <strong
+                  ><a href="" target="_blank" rel="noopener nofollow"
+                    >Matrix Web</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="box-lightbox" style="z-index: 100;">
+      <div class="bt-close js-lightbox-close" onclick="closeLogin()"></div>
+      <div class="box-content-login">
+        <div class="box-login">
+          <div class="tab-form js-tab-form active" id="tab-login-form">
+            <div class="form">
+              <div class="box-section">
+                <div class="header">
+                  <div class="box-left">
+                    <h3><strong>Sign in to continue</strong></h3>
+                  </div>
+                  <div class="box-right">
+                    <h3>
+                      Not a member yet?
+                      <strong
+                        class="text-green cursor-pointer js-tab js-register"
+                        onclick="toggleForms(event)"
+                        >Register now</strong
+                      >
+                    </h3>
+                  </div>
+                </div>
+
+                <form action="/login" method="post" novalidate="">
+                  <p>
+                    <label class="tip-form"
+                      ><input
+                        class="text-input"
+                        placeholder="Email or Username"
+                        type="text"
+                    /></label>
+                  </p>
+                  <p>
+                    <label class="tip-form"
+                      ><input
+                        class="text-input"
+                        placeholder="Password"
+                        type="password"
+                    /></label>
+                  </p>
+                  <p class="check">
+                    <input id="remember_me" type="checkbox" />
+                    <label for="remember_me">Keep me logged in</label>
+                  </p>
+                  <p>
+                    <button
+                      type="submit"
+                      class="button js-bt-loading text-uppercase"
+                    >
+                      <span class="bt-content">Login now</span>
+                    </button>
+                  </p>
+                  <p align="center">
+                    <strong onclick="toggleForms(event)"
+                      ><a class="link-2 js-forgot-password" href=""
+                        >Forgot your password</a
+                      ></strong
+                    >
+                  </p>
+                </form>
+              </div>
+
+              <div class="box-section">
+                <div class="header">
+                  <h3><strong>Or sign in with</strong></h3>
+                </div>
+                <div class="bts">
+                  <a href=" " class="bt-connect bt-google">
+                    <svg viewBox="0 0 400 400" class="ico-svg">
+                      <path
+                        d="M142.9 24.2C97.6 39.7 59 73.6 37.5 116.5 30 131.3 24.6 147 21.3 163.3c-8.2 40.4-2.5 83.5 16.1 120.3 12.1 24 29.5 45.4 50.5 62.1 19.9 15.8 43 27.6 67.6 34.1 31 8.3 64 8.1 95.2 1 28.2-6.5 54.9-20 76.2-39.6 22.5-20.7 38.6-47.9 47.1-77.2 9.3-31.9 10.5-66 4.7-98.8h-175v72.6h101.4c-3.9 23.2-17.7 44.4-37.2 57.5-12.3 8.3-26.4 13.6-41 16.2-14.6 2.5-29.8 2.8-44.4-.1-14.9-3-29-9.2-41.4-17.9-19.8-13.9-34.9-34.2-42.6-57.1-7.9-23.3-8-49.2 0-72.4 5.6-16.4 14.8-31.5 27-43.9 15-15.4 34.5-26.4 55.6-30.9 18-3.8 37-3.1 54.6 2.2 15 4.5 28.8 12.8 40.1 23.6L310 80.8c6-6.1 12.3-12 18.1-18.3-17.3-16-37.7-28.9-59.9-37.1-40-14.8-85-15.1-125.3-1.2z"
+                        fill="$plainWhite"
+                      ></path>
+                      <path
+                        d="M142.9 24.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z"
+                        fill="#EA4335"
+                      ></path>
+                      <path
+                        d="M21.4 163.2c3.3-16.2 8.7-32 16.2-46.8 20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3-18.8-36.7-24.5-79.8-16.3-120.2z"
+                        fill="#FBBC05"
+                      ></path>
+                      <path
+                        d="M203.7 165.1h175c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H203.6c.1-24.2.1-48.4.1-72.6z"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M37.5 283.5c20.3-15.7 40.6-31.5 60.9-47.3 7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62z"
+                        fill="#34A853"
+                      ></path>
+                    </svg>
+                    <span>Google</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-msg hidden">
+            <div class="box-loading style3 open">
+              <div class="spinner"></div>
+            </div>
+          </div>
+          <div
+            class="tab-form js-tab-form active"
+            id="tab-register-form"
+            style="display: none;"
+          >
+            <div class="form">
+              <div class="box-section">
+                <div class="header">
+                  <div class="box-left">
+                    <h3><strong>Register with</strong></h3>
+                  </div>
+                  <div class="box-right">
+                    <h3>
+                      Are you a member?
+                      <strong class="text-green cursor-pointer"
+                        ><a
+                          href=" "
+                          class="js-tab-login"
+                          onclick="toggleForms(event)"
+                          >Login now</a
+                        ></strong
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="bts">
+                  <a href=" " class="bt-connect bt-google">
+                    <svg viewBox="0 0 400 400" class="ico-svg">
+                      <path
+                        d="M142.9 24.2C97.6 39.7 59 73.6 37.5 116.5 30 131.3 24.6 147 21.3 163.3c-8.2 40.4-2.5 83.5 16.1 120.3 12.1 24 29.5 45.4 50.5 62.1 19.9 15.8 43 27.6 67.6 34.1 31 8.3 64 8.1 95.2 1 28.2-6.5 54.9-20 76.2-39.6 22.5-20.7 38.6-47.9 47.1-77.2 9.3-31.9 10.5-66 4.7-98.8h-175v72.6h101.4c-3.9 23.2-17.7 44.4-37.2 57.5-12.3 8.3-26.4 13.6-41 16.2-14.6 2.5-29.8 2.8-44.4-.1-14.9-3-29-9.2-41.4-17.9-19.8-13.9-34.9-34.2-42.6-57.1-7.9-23.3-8-49.2 0-72.4 5.6-16.4 14.8-31.5 27-43.9 15-15.4 34.5-26.4 55.6-30.9 18-3.8 37-3.1 54.6 2.2 15 4.5 28.8 12.8 40.1 23.6L310 80.8c6-6.1 12.3-12 18.1-18.3-17.3-16-37.7-28.9-59.9-37.1-40-14.8-85-15.1-125.3-1.2z"
+                        fill="$plainWhite"
+                      ></path>
+                      <path
+                        d="M142.9 24.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z"
+                        fill="#EA4335"
+                      ></path>
+                      <path
+                        d="M21.4 163.2c3.3-16.2 8.7-32 16.2-46.8 20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3-18.8-36.7-24.5-79.8-16.3-120.2z"
+                        fill="#FBBC05"
+                      ></path>
+                      <path
+                        d="M203.7 165.1h175c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H203.6c.1-24.2.1-48.4.1-72.6z"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M37.5 283.5c20.3-15.7 40.6-31.5 60.9-47.3 7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62z"
+                        fill="#34A853"
+                      ></path>
+                    </svg>
+                    <span>Google</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="box-section">
+                <div class="header">
+                  <h3><strong>Or with your E-mail</strong></h3>
+                </div>
+                <form
+                  name="register"
+                  method="post"
+                  class="register_form"
+                  novalidate="novalidate"
+                >
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="register_username"
+                      required="required"
+                      class="text-input"
+                      placeholder="Username"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="register_email"
+                      required="required"
+                      class="text-input"
+                      placeholder="E-mail"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      id="register_plainPassword_first"
+                      required="required"
+                      class="text-input js-password js-password-check"
+                      placeholder="Password"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p class="hidden" id="repeat-pass"></p>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      id="register_plainPassword_second"
+                      name="register[plainPassword][second]"
+                      required="required"
+                      class="text-input"
+                      placeholder="Repeat Password"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p class="row"></p>
+                  <div class="form-group check">
+                    <input
+                      type="checkbox"
+                      id="register_termsAndConditions"
+                      value="1"
+                    />
+                    <label for="register_termsAndConditions"
+                      >I accept the
+                      <strong
+                        ><a href="/terms/" target="_blank"
+                          >Terms and Conditions</a
+                        ></strong
+                      >
+                      and
+                      <strong
+                        ><a href="/privacy-policy/" target="_blank"
+                          >Privacy Policy</a
+                        ></strong
+                      ></label
+                    >
+
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+
+                  <p>
+                    <input
+                      class="button text-uppercase"
+                      type="submit"
+                      value="Create your Account"
+                    />
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-form js-tab-form active"
+            id="tab-forgot"
+            style="display: none;"
+          >
+            <div class="form">
+              <div class="box-section">
+                <div class="header">
+                  <h3><strong>Forgot your password</strong></h3>
+                </div>
+
+                <p>
+                  Enter your username or email address and we will send you a
+                  link to reset your password.
+                </p>
+
+                <form
+                  name="forgot_password"
+                  method="post"
+                  action="/forgot-password"
+                  class="forgot_password_form"
+                >
+                  <div class="form-group has-info">
+                    <p>
+                      <input
+                        type="text"
+                        id="forgot_password_usernameOrEmail"
+                        name="forgot_password[usernameOrEmail]"
+                        required="required"
+                        class="text-input"
+                        placeholder="Email or Username"
+                      />
+                      <span class="msg" style="display: inline;"></span>
+                    </p>
+
+                    <input
+                      type="hidden"
+                      id="forgot_password__token"
+                      name="forgot_password[_token]"
+                      value="jnNhslXX-FDjvbuPR2L2ZaCDnKzqFtRZjLaBU5iChdQ"
+                    />
+
+                    <p>
+                      <input
+                        type="submit"
+                        name="submit"
+                        value="FORGOT PASSWORD"
+                        class="button bold"
+                      />
+                    </p>
+
+                    <p align="center">
+                      <strong
+                        class="link-2 cursor-pointer js-tab-login"
+                        onclick="toggleForms(event)"
+                        >Back</strong
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

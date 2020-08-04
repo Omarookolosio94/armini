@@ -1,0 +1,127 @@
+/* Button */
+.button {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  padding: 0 35px;
+  background-color: $lightGreen;
+  color: $plainWhite;
+  line-height: 63px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    color: $plainWhite;
+    background-color: $darkgreen;
+  }
+
+  &.button-large {
+    height: 70px;
+    line-height: 71px;
+  }
+  &.button-loadmore {
+    position: relative;
+    clear: both;
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    color: $lightHover;
+    background-color: $lightColor;
+    font-size: 17px;
+    font-weight: 400;
+
+    .txt-loading {
+      display: none;
+    }
+  }
+}
+
+.button.button-loadmore.style2 {
+  margin-top: 15px;
+}
+
+.button.button-loadmore:hover {
+  background: $plainWhite;
+  color: $gray;
+}
+
+.bt-connect {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  height: 50px;
+  padding: 0 20px 0 45px;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: $lightHover;
+  text-align: left;
+  color: $plainWhite;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  i,
+  .ico-svg {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 25px;
+    transform: translateY(-50%);
+  }
+  i {
+    color: $plainWhite;
+  }
+  .ico-svg {
+    fill: $plainWhite;
+  }
+}
+
+.bt-connect.bt-google {
+  background-color: $lightColor;
+  color: $secondaryBg;
+  font-weight: 600;
+
+  .ico-svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.bt-connect.bt-twitter {
+  background-color: $twitter;
+}
+
+.bt-connect.bt-facebook {
+  background-color: $facebook;
+}
+
+.bt-connect:hover {
+  opacity: 0.75;
+  color: $plainWhite;
+
+  .ico-svg {
+    fill: $plainWhite;
+  }
+
+  i {
+    color: $plainWhite;
+  }
+}
+
+.bt-connect.bt-google:hover {
+  color: $secondaryBg;
+}

@@ -20,19 +20,15 @@
             </div>
           </div>
           <ul class="navlinks">
-            <li>
+            <li onclick="openLogin()">
               <span class="nav-item">Register/Log In</span>
             </li>
             <li>
               <a href="../index.html" class="nav-link">Home</a>
             </li>
+
             <li>
-              <a href="../profile.html" class="nav-link">Profile</a>
-            </li>
-            <li>
-              <a href="../profiles.html" class="nav-link"
-                >Professional Directory</a
-              >
+              <a href="../profiles.html" class="nav-link">Publishers'</a>
             </li>
 
             <li>
@@ -40,18 +36,7 @@
                 >Publications</a
               >
             </li>
-            <li>
-              <a href="../categories.html" class="nav-link" data-count="20"
-                >Categories</a
-              >
-            </li>
-            <li>
-              <a href="" class="nav-link"
-                >Jobs/ Talent
 
-                <span class="badget">BETA</span>
-              </a>
-            </li>
             <li>
               <a href="../about.html" class="nav-link">About Us</a>
             </li>
@@ -137,15 +122,15 @@
             <!-- Login Action -->
             <div class="item login">
               <span>Are you a member?</span>
-              <strong
-                ><a class="text-black open_login" href="/login"
+              <strong onclick="openLogin()"
+                ><a class="text-black open_login" href="#" role="button"
                   >Register / log in</a
                 ></strong
               >
             </div>
 
             <div class="item has-tablet" id="bt-submit">
-              <a href="" class="button button-large">
+              <a href="../forms/article.html" class="button button-large">
                 <span>SUBMIT YOUR PUBLICATIONS!</span>
               </a>
             </div>
@@ -179,11 +164,6 @@
                 class="search-input js-search-input"
                 value=""
               />
-              <div class="search-info">
-                <div class="row default active">
-                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
-                </div>
-              </div>
             </div>
           </div>
           <div class="box-right" onclick="closeSearch()">
@@ -519,32 +499,20 @@
                 The awards for design, creativity and innovation on the Internet
               </h2>
               <ul class="menu-footer">
-                <li class="directory not-mobile">
-                  <a href="" data-count="2">Directory</a>
-                </li>
-                <li class="jobs not-mobile">
-                  <a href=" " data-count="5">Jobs</a>
-                </li>
                 <li><a href="../about.html" class="item">About Us</a></li>
-                <li><a href="" class="item">Winners</a></li>
-                <li><a href="" class="item">Nominees</a></li>
-                <li><a href=" " class="item">Blog</a></li>
+                <li><a href="../profiles.html" class="item">Publishers</a></li>
+                <li>
+                  <a href="../category.html" class="item">Publications</a>
+                </li>
+                <li><a href="#!" class="item">Advertisement</a></li>
               </ul>
               <p class="follow">
                 <strong>Follow us</strong>
                 <a rel="noopener" href=" " target="_blank">Twitter</a>
                 <a rel="noopener" href="" target="_blank">Facebook</a>
-                <a rel="noopener" href="" target="_blank">Youtube</a>
                 <a rel="noopener" href=" " target="_blank">Instagram</a>
                 <a rel="noopener" href=" " target="_blank">Linkedin</a>
               </p>
-            </div>
-            <div class="box-right">
-              <div class="headline">
-                Next Conferences
-                <i class="fal fa-calendar"></i>
-                <strong><a href="" class="link-1">Coming soon</a></strong>
-              </div>
             </div>
           </div>
         </div>
@@ -552,58 +520,34 @@
           <div class="inner">
             <div class="box-left">
               <ul class="menu-footer">
-                <li><a rel="nofollow" href="contact.html">Contact Us</a></li>
-                <li><a rel="nofollow" href="">F.A.Q</a></li>
+                <li>
+                  <a rel="nofollow" href="contact.html">Contact Us</a>
+                </li>
                 <li>
                   <a rel="nofollow" href="cookies.html">Cookies Policy</a>
                 </li>
-                <li><a rel="nofollow" href="legal.html">Legal Terms</a></li>
+                <li>
+                  <a rel="nofollow" href="legal.html">Legal Terms</a>
+                </li>
                 <li>
                   <a rel="nofollow" href="privacy.html">Privacy Policy</a>
                 </li>
                 <li>
                   <div class="box-select-lang js-box-select-locales">
-                    <div class="select" onclick="openDropDown(event)">
+                    <div class="select" onclick=" ">
                       English
                       <img src="../img/icons/uk.svg" alt="" />
                     </div>
-
-                    <ul class="options">
-                      <li
-                        lang="en"
-                        class="js-change-locale active"
-                        data-locale="en"
-                      >
-                        English
-                        <img src="../img/icons/uk.svg" alt="" />
-                      </li>
-                      <li lang="es" class="js-change-locale" data-locale="es">
-                        Español - Spanish
-                        <img src="../img/icons/spain.svg" alt="" />
-                      </li>
-                      <li lang="ko" class="js-change-locale" data-locale="ko">
-                        한국어 - Korean
-                        <img src="../img/icons/southkorea.svg" alt="" />
-                      </li>
-                      <li lang="zh" class="js-change-locale" data-locale="zh">
-                        中國 - Chinese
-                        <img src="../img/icons/china.svg" alt="" />
-                      </li>
-                      <li lang="ja" class="js-change-locale" data-locale="ja">
-                        日本語 - Japanese
-                        <img src="../img/icons/japan.svg" alt="" />
-                      </li>
-                    </ul>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="box-right">
               <p>
-                Private Cloud by
+                Designed by
                 <strong
-                  ><a href=" " target="_blank" rel="noopener nofollow"
-                    >Stackscale</a
+                  ><a href="#!" target="_blank" rel="noopener nofollow"
+                    >Matrix Web</a
                   ></strong
                 >
               </p>

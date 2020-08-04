@@ -390,6 +390,10 @@ figure:after {
   text-decoration: line-through;
 }
 
+.pt-0 {
+  padding-top: 0 !important;
+}
+
 @include mediaMd {
   .heading-x-large {
     font-size: 35px;
